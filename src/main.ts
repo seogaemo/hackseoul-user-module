@@ -1,5 +1,5 @@
 import { serviceHost } from "@shared/constants/env";
-import { grpcClientOptions, servicePort } from "@shared/options/hello.option";
+import { grpcClientOptions, servicePort } from "@shared/options/user.option";
 
 import { Logger } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";

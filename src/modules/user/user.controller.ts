@@ -3,6 +3,7 @@ import {
   CreateUser,
   CreateUserResponse,
   GetUserById,
+  GetUserByUid,
   UserResponse,
   UserServiceController,
   UserServiceControllerMethods,
@@ -22,9 +23,14 @@ export class UserController implements UserServiceController {
   getUserById(
     request: GetUserById,
   ): Promise<UserResponse> | Observable<UserResponse> | UserResponse {
-    return this.userService.getUserById(request.uid);
+    return this.userService.getUserById(request.id);
   }
 
+  getUserByUid(
+    request: GetUserByUid,
+  ): Promise<UserResponse> | Observable<UserResponse> | UserResponse {
+    throw new Error("Method not implemented.");
+  }
   createUser(
     request: CreateUser,
   ):
